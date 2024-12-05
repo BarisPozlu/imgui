@@ -25,9 +25,10 @@ project "ImGui"
 		".",
 		"../GLFW/include"
 	}
-
+	
 	filter "system:windows"
-
+	
+		defines "IMGUI_API=__declspec(dllexport)"
 		systemversion "latest"
 		staticruntime "On"
 
